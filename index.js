@@ -1,4 +1,5 @@
 const express = require("express")
-const sqlite3 = require("better-sqlite3")
 
-sqlite3()
+const { main } = require('./database/setup')
+
+console.log(main.generations)
