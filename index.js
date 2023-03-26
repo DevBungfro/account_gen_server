@@ -2,6 +2,7 @@ const express = require("express")
 const expressSession = require('express-session');
 const countapi = require('countapi-js');
 const moment = require('moment')
+const cors = require('cors')
 
 const fs = require('fs')
 const os = require('os')
@@ -39,6 +40,7 @@ async function searchVisits() {
 
 const app = express()
 app.enable('trust proxy');
+app.use(cors());
 app.use(expressSession({
     secret: 'secret',
     resave: false,
@@ -70,8 +72,8 @@ app.get('/api/visit', async function (req, res) {
             visits: main.totalVisits
         });
     } else {
-        res.status(401).json({
-            message: 'An API key is required in this request, please put it in the authorization header and retry this request.'
+       res.status(401).json({
+          message: 'An API key is required in this request, please put it in the authorization header and retry this request.'
         })
     }
 
