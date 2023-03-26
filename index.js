@@ -1,4 +1,5 @@
 const express = require("express")
+<<<<<<< HEAD
 const expressSession = require('express-session');
 const countapi = require('countapi-js');
 const moment = require('moment')
@@ -111,3 +112,9 @@ app.get('/api/get/visits', async function (req, res) {
 })
 
 app.listen(8080);
+=======
+
+const { main } = require('./database/setup')
+
+console.log(main.generations)
+>>>>>>> 4339307990cad4e149fdc0fcc5989511f87e38f7
