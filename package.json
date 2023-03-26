@@ -16,16 +16,12 @@
   "bin": {
     "api": "./bin/index.js"
   },
-  "bin": {
-    "api": "./bin/index.js"
-  },
   "scripts": {
-    "start": "nodemon index.js",
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "bungfro",
   "license": "ISC",
   "description": ""
 }
