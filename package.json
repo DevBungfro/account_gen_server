@@ -1,13 +1,23 @@
 {
   "dependencies": {
-    "better-sqlite3": "^8.2.0",
+    "atlas.db": "^1.0.8",
+    "countapi-js": "^1.0.2",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "express-session": "^1.17.3",
+    "express-visitor-counter": "^1.4.0",
+    "lowdb": "^5.1.0",
+    "moment": "^2.29.4",
+    "nodemon": "^2.0.22",
+    "yargs": "^17.7.1"
   },
   "name": "account_gen_server",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "api": "./bin/index.js"
+  },
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
