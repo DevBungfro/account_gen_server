@@ -1,7 +1,6 @@
 [
   {
     "id": "main",
-<<<<<<< HEAD
     "totalVisits": 6,
     "totalGenerations": 0,
     "visits": {
@@ -14,11 +13,5 @@
       "03/25/2023": 256
     },
     "generations": {}
-=======
-    "totalVisits": 0,
-    "totalGenerations": 0,
-    "visits": [],
-    "generations": []
->>>>>>> 4339307990cad4e149fdc0fcc5989511f87e38f7
   }
 ]
